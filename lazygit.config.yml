@@ -1,0 +1,23 @@
+os:
+  editPreset: 'nvim-remote'
+  suspend: true
+
+gui:
+  expandFocusedSidePanel: true
+  expandedSidePanelWeight: 10
+  mainPanelSplitMode: horizontal
+  scrollOffMargin: 999
+  showIcons: true
+  useHunkModeInStagingView: false
+  spinner:
+    frames:
+      - ⠠
+      - ⣀
+      - ⣄
+      - ⣤
+      - ⣦
+      - ⣶
+      - ⣷
+      - ⣿
+
+promptToReturnFromSubprocess: false
