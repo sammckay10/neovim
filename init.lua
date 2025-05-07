@@ -1,0 +1,5 @@
+require 'config.prerequisites'
+require 'config.general'
+require 'config.keybinds'
+require 'config.diagnostics'
+require 'config.lazy'

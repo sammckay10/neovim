@@ -1,0 +1,9 @@
+call_parentheses = "None"
+collapse_simple_statement = "Never"
+indent_type = "Spaces"
+indent_width = 2
+quote_style = "ForceSingle"
+space_after_function_names = "Never"
+
+[sort_requires]
+enabled = false
