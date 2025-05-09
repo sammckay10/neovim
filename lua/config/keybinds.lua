@@ -15,3 +15,7 @@ vim.keymap.set('v', '<leader>c', 'gc', { remap = true })
 -- Up and down
 vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true })
+
+-- System copy/paste
+vim.keymap.set({ 'n', 'x' }, '<leader>y', '"+y')
+vim.keymap.set({ 'n', 'x' }, '<leader>p', '"+p')
