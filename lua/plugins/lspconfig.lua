@@ -1,6 +1,8 @@
 return {
   'neovim/nvim-lspconfig',
   config = function()
+    vim.lsp.set_log_level 'off'
+
     vim.lsp.config('vtsls', {
       filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
       settings = {
