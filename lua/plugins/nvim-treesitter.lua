@@ -4,7 +4,13 @@ return {
   config = function()
     require('nvim-treesitter.configs').setup {
       auto_install = true,
-      ensure_installed = { 'html', 'javascript', 'css', 'typescript' },
+      ensure_installed = {
+        'lua',
+        'html',
+        'css',
+        'javascript',
+        'typescript',
+      },
       highlight = { enable = true },
       ignore_install = {},
       modules = {},
