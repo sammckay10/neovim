@@ -19,3 +19,6 @@ vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true })
 -- System copy/paste
 vim.keymap.set({ 'n', 'x' }, '<leader>y', '"+y')
 vim.keymap.set({ 'n', 'x' }, '<leader>p', '"+p')
+
+-- Force quit all
+vim.keymap.set({ 'n', 'v' }, '<C-x>', ':qa!<CR>', { noremap = true, silent = true })
