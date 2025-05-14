@@ -1,29 +1,29 @@
 return {
-  'mason-org/mason.nvim',
+  "mason-org/mason.nvim",
   opts = {},
   init = function()
-    local registry = require 'mason-registry'
+    local registry = require("mason-registry")
 
     local ensure_installed = {
       -- Formatting
-      'eslint_d',
-      'pint',
-      'prettierd',
-      'stylua',
+      "eslint_d",
+      "pint",
+      "prettierd",
+      "stylua",
 
       -- LSP
-      'astro-language-server',
-      'css-lsp',
-      'emmet-language-server',
-      'eslint-lsp',
-      'html-lsp',
-      'json-lsp',
-      'lua-language-server',
-      'phpactor',
-      'svelte-language-server',
-      'tailwindcss-language-server',
-      'vtsls',
-      'vue-language-server',
+      "astro-language-server",
+      "css-lsp",
+      "emmet-language-server",
+      "eslint-lsp",
+      "html-lsp",
+      "json-lsp",
+      "lua-language-server",
+      "phpactor",
+      "svelte-language-server",
+      "tailwindcss-language-server",
+      "vtsls",
+      "vue-language-server",
     }
 
     registry.refresh(function()
@@ -41,11 +41,11 @@ return {
         return
       end
 
-      vim.notify('Installing the following packages via Mason: ' .. table.concat(
+      vim.notify("Installing the following packages via Mason: " .. table.concat(
         vim.tbl_map(function(item)
           return item.name
         end, to_install),
-        ', '
+        ", "
       ), vim.log.levels.INFO)
 
       for _, tool in ipairs(to_install) do

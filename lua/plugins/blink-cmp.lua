@@ -1,12 +1,12 @@
 return {
-  'saghen/blink.cmp',
-  version = '1.*',
-  build = 'cargo build --release',
+  "saghen/blink.cmp",
+  version = "1.*",
+  build = "cargo build --release",
   opts = {
     keymap = {
-      preset = 'enter',
-      ['<Tab>'] = { 'select_next', 'fallback' },
-      ['<S-Tab>'] = { 'select_prev', 'fallback' },
+      preset = "enter",
+      ["<Tab>"] = { "select_next", "fallback" },
+      ["<S-Tab>"] = { "select_prev", "fallback" },
     },
     signature = {
       enabled = true,
@@ -28,11 +28,11 @@ return {
         treesitter_highlighting = true,
       },
       menu = {
-        draw = { treesitter = { 'lsp' } },
+        draw = { treesitter = { "lsp" } },
       },
     },
     sources = {
-      default = { 'lsp', 'path' },
+      default = { "lsp", "path" },
     },
   },
 }

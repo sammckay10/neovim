@@ -1,6 +1,6 @@
 return {
-  'kdheepak/lazygit.nvim',
+  "kdheepak/lazygit.nvim",
   keys = {
-    { '<C-g>', '<cmd>LazyGit<cr>' },
+    { "<C-g>", "<cmd>LazyGit<cr>" },
   },
 }

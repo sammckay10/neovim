@@ -1,25 +1,25 @@
 return {
-  'nvim-lualine/lualine.nvim',
+  "nvim-lualine/lualine.nvim",
   dependencies = {
-    'nvim-tree/nvim-web-devicons',
+    "nvim-tree/nvim-web-devicons",
   },
   opts = {
     options = {
       globalstatus = true,
-      section_separators = { left = '', right = '' },
-      component_separators = { left = '', right = '' },
+      section_separators = { left = "", right = "" },
+      component_separators = { left = "", right = "" },
     },
     sections = {
       lualine_b = {},
       lualine_c = {
         {
-          'filename',
+          "filename",
           path = 1,
         },
       },
-      lualine_x = { 'filetype' },
+      lualine_x = { "filetype" },
       lualine_y = {
-        'branch',
+        "branch",
       },
       lualine_z = {},
     },

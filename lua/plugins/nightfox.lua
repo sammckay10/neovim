@@ -1,6 +1,6 @@
 return {
-  'EdenEast/nightfox.nvim',
+  "EdenEast/nightfox.nvim",
   config = function()
-    vim.cmd.colorscheme 'nightfox'
+    vim.cmd.colorscheme("nightfox")
   end,
 }
