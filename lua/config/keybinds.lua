@@ -22,3 +22,11 @@ vim.keymap.set({ "n", "x" }, "<leader>p", "\"+p")
 
 -- Force quit all
 vim.keymap.set({ "n", "v" }, "<C-x>", ":qa!<CR>", { noremap = true, silent = true })
+
+-- Open Lazygit
+vim.keymap.set(
+  { "n" },
+  "<C-g>",
+  ":terminal lazygit -ucf " .. vim.fn.stdpath("config") .. "/lazygit.config.yml" .. "<CR>i",
+  { noremap = true, silent = true }
+)
