@@ -6,7 +6,6 @@ vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "gr", vim.lsp.buf.rename)
 vim.keymap.set("n", "ge", vim.diagnostic.open_float)
-vim.keymap.set("n", "gf", vim.lsp.buf.code_action)
 
 -- Comments
 vim.keymap.set("n", "<leader>c", "gcc", { remap = true })
