@@ -1,8 +1,7 @@
 return {
   "catppuccin/nvim",
   opts = {
-    flavour = "mocha",
-    transparent_background = true,
+    transparent_background = false,
     default_integrations = false,
     integrations = {
       blink_cmp = true,
@@ -13,6 +12,6 @@ return {
     },
   },
   config = function()
-    vim.cmd.colorscheme("catppuccin")
+    vim.cmd.colorscheme("catppuccin-frappe")
   end,
 }
