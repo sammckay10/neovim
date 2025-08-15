@@ -24,9 +24,16 @@ vim.keymap.set({ "n", "x" }, "<leader>p", "\"+p")
 vim.keymap.set({ "n", "v" }, "<C-x>", ":qa!<CR>", { noremap = true, silent = true })
 
 -- Open Lazygit
-vim.keymap.set(
-  { "n" },
-  "<C-g>",
-  ":terminal lazygit -ucf " .. vim.fn.stdpath("config") .. "/lazygit.config.yml" .. "<CR>i",
-  { noremap = true, silent = true }
-)
+vim.keymap.set({ "n" }, "<C-g>", function()
+  --- @diagnostic disable-next-line: missing-fields
+  require("FTerm").scratch({
+    cmd = "lazygit -ucf " .. vim.fn.stdpath("config") .. "/lazygit.config.yml",
+    dimensions = {
+      height = 1,
+      width = 1,
+      x = 0,
+      y = 0,
+    },
+    border = "solid", -- :h 'winborder'
+  })
+end, { noremap = true, silent = true })
