@@ -1,5 +1,4 @@
 vim.opt.cmdheight = 1
-vim.opt.completeopt = "preview"
 vim.opt.errorbells = false
 vim.opt.expandtab = true
 vim.opt.fileformats = "unix"
